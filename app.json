@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "LizExpress",
+    "slug": "lizexpress-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "lizexpress",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#4A0E67"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.lizexpress.mobile"
+    },
+    "android": {
+      "backgroundColor": "#4A0E67",
+      "package": "com.lizexpress.mobile",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "backgroundColor": "#4A0E67"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-image-picker",
+      "expo-camera",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location to show nearby items."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
